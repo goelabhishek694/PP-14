@@ -32,10 +32,19 @@ let path=require('path');
 // let fileArr=fs.readdirSync('/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/dir');
 // console.log(fileArr);
 
-let srcPath='/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/fsModule/f1.txt';
-let destPath='/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/fsModule/f2.txt';
-let toBeCopiedFileName=path.basename(srcPath);
-let dest=path.join('/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/dir',toBeCopiedFileName);
-console.log(dest);
-fs.copyFileSync(srcPath,destPath);
-fs.copyFileSync(srcPath,dest); 
+// let srcPath='/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/fsModule/f1.txt';
+// let destPath='/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/fsModule/f2.txt';
+// let toBeCopiedFileName=path.basename(srcPath);
+// let dest=path.join('/Users/abhishekgoel/Desktop/PP_14/fileOrganizer/dir',toBeCopiedFileName);
+// console.log(dest);
+// fs.copyFileSync(srcPath,destPath);
+// fs.copyFileSync(srcPath,dest); 
+
+
+
+console.log(process.cwd());
+console.log(__dirname);
+console.log(__filename);
+console.log(module);
+'|__'
+"└──"
