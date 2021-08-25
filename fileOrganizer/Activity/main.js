@@ -13,7 +13,7 @@ switch(command){
         treeObj.treeFn(path);
         break;
     case "organize":
-        organizeObj.organiseFn(path);
+        organizeObj.organizeFn(path);
         break;
     default:
         console.log('Invalid command');
