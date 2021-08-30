@@ -1,4 +1,4 @@
-.sonu{
+/* .sonu{
     color:red
 }
 
@@ -12,4 +12,14 @@ h1{
 
 #monu{
     color:blueviolet
+}
+
+div{
+    height:100px;
+    width: 100px;
+    color:aqua
+} */
+
+div p span{
+    color:blue;
 }
