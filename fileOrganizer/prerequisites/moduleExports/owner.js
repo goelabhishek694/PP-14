@@ -6,6 +6,8 @@ function foo(msg){
 
 console.log('hello i was made in owner.js');
 
+// module.exports=str;
+
 module.exports={
     var:a,
     string:str,
