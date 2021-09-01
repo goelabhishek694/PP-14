@@ -24,16 +24,17 @@ function extractHtml(html) {
   let now = 0;
   for (let i = 0; i < bowlerTableArr.length; i++) {
     let bowlerTable = selectorTool(bowlerTableArr[i]);
-    let allBowlers = selectorTool(bowlerTable).find("tbody>tr");
-    // console.log(allBowlers.length);
+    let allBowlersRow = selectorTool(bowlerTable).find("tbody>tr");
+    // console.log(allBowlersRow.length);
     // console.log(bowlerTable);
 
-    for (let j = 0; j < allBowlers.length; j++) {
-      let colOfEachPlayerArr = selectorTool(allBowlers[j]).find("td");
-      // console.log(colOfEachPlayerArr.length);
-      let playerName = selectorTool(colOfEachPlayerArr[0]).text();
-      let currNumOfWickets = selectorTool(colOfEachPlayerArr[4]).text();
-      if (colOfEachPlayerArr.length == 1) continue;
+    for (let j = 0; j < allBowlersRow.length; j++) {
+      //td-> column
+      let columnsOfEachBowlerRow = selectorTool(allBowlersRow[j]).find("td");
+      // console.log(columnsOfEachBowlerRow.length);
+      let playerName = selectorTool(columnsOfEachBowlerRow[0]).text();
+      let currNumOfWickets = selectorTool(columnsOfEachBowlerRow[4]).text();
+      if (columnsOfEachBowlerRow.length == 1) continue;
       // console.log(playerName);
       // console.log(currNumOfWickets);
 
